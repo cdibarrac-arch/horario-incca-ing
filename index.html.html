@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0f172a" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Horario Ingeniería Industrial</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1995/1995470.png" type="image/png">
+  <style>
+    body {
+      margin: 0;
+      padding: 30px;
+      background: #0f172a;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: auto;
+      background: #111827;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 2px solid #1e293b;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+
+    .header {
+      background: linear-gradient(90deg, #0f172a, #1e3a8a);
+      padding: 30px;
+      text-align: center;
+      border-bottom: 2px solid #334155;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 42px;
+      letter-spacing: 2px;
+    }
+
+    .header p {
+      margin-top: 10px;
+      font-size: 20px;
+      color: #cbd5e1;
+      letter-spacing: 4px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+
+    th {
+      background: #0f172a;
+      color: white;
+      padding: 18px;
+      border: 1px solid #334155;
+      font-size: 20px;
+    }
+
+    td {
+      height: 90px;
+      border: 1px solid #334155;
+      vertical-align: top;
+      padding: 8px;
+      background: #111827;
+      color: white;
+      font-size: 14px;
+    }
+
+    .hora {
+      width: 120px;
+      text-align: center;
+      font-weight: bold;
+      background: #1e293b;
+    }
+
+    .clase {
+      border-radius: 14px;
+      padding: 10px;
+      font-weight: bold;
+      text-align: center;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .fisica { background: #315b8a; }
+    .algebra { background: #6d5ea8; }
+    .estadistica { background: #b8860b; }
+    .dibujo { background: #b85c7a; }
+    .algoritmia { background: #2563eb; }
+    .quimica { background: #3f7d58; }
+    .calculo { background: #0f766e; }
+
+    .clase p {
+      margin: 6px 0;
+    }
+
+    a {
+      color: #f8fafc;
+      text-decoration: none;
+      background: rgba(255,255,255,0.15);
+      padding: 6px 10px;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 6px;
+      transition: 0.3s;
+      font-size: 13px;
+    }
+
+    a:hover {
+      background: rgba(255,255,255,0.3);
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body>
+  <button id="installBtn" style="position:fixed;bottom:20px;right:20px;padding:12px 18px;border:none;border-radius:12px;background:#2563eb;color:white;font-weight:bold;cursor:pointer;display:none;z-index:999;">📲 Instalar App</button>
+
+  <div class="container">
+    <div class="header">
+      <h1>⚙️ HORARIO</h1>
+      <p>UNIVERSIDAD INCCA - INGENIERÍA INDUSTRIAL</p>
+    </div>
+
+    <table>
+      <tr>
+        <th>HORA</th>
+        <th>LUNES</th>
+        <th>MARTES</th>
+        <th>MIÉRCOLES</th>
+        <th>JUEVES</th>
+        <th>VIERNES</th>
+        <th>SÁBADO</th>
+      </tr>
+
+      <tr>
+        <td class="hora">9:00 AM</td>
+        <td></td><td></td><td></td><td></td><td></td>
+        <td>
+          <div class="clase quimica">
+            <p>QUÍMICA</p>
+            <p>9:00 AM - 11:00 AM</p>
+            <a href="https://meet.google.com/rpb-gfmh-vqd" target="_blank">Abrir Meet</a>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="hora">6:00 PM</td>
+        <td>
+          <div class="clase fisica">
+            <p>FÍSICA MECÁNICA</p>
+            <p>6:00 PM - 8:00 PM</p>
+            <a href="https://meet.google.com/ddn-hzao-aps" target="_blank">Abrir Meet</a>
+          </div>
+        </td>
+        <td>
+          <div class="clase estadistica">
+            <p>ESTADÍSTICA</p>
+            <p>6:00 PM - 8:00 PM</p>
+            <a href="https://meet.google.com/mfc-ypwa-szg" target="_blank">Abrir Meet</a>
+          </div>
+        </td>
+        <td>
+          <div class="clase dibujo">
+            <p>DIBUJO EN INGENIERÍA</p>
+            <p>6:00 PM - 8:00 PM</p>
+            <a href="https://meet.google.com/tpe-pwos-sdw" target="_blank">Abrir Meet</a>
+          </div>
+        </td>
+        <td>
+          <div class="clase estadistica">
+            <p>ESTADÍSTICA</p>
+            <p>6:00 PM - 8:00 PM</p>
+            <a href="https://meet.google.com/mfc-ypwa-szg" target="_blank">Abrir Meet</a>
+          </div>
+        </td>
+        <td>
+          <div class="clase algebra">
+            <p>ÁLGEBRA LINEAL</p>
+            <p>7:00 PM - 8:00 PM</p>
+            <a href="https://meet.google.com/owu-jxhz-fiz" target="_blank">Abrir Meet</a>
+          </div>
+        </td>
+        <td>
+          <div class="clase calculo">
+            <p>CÁLCULO DIFERENCIAL</p>
+            <p>6:00 PM - 7:00 PM</p>
+            <a href="https://meet.google.com/asq-fvgv-cya" target="_blank">Abrir Meet</a>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="hora">8:00 PM</td>
+        <td>
+          <div class="clase algebra">
+            <p>ÁLGEBRA LINEAL</p>
+            <p>8:00 PM - 10:00 PM</p>
+            <a href="https://meet.google.com/owu-jxhz-fiz" target="_blank">Abrir Meet</a>
+          </div>
+        </td>
+        <td></td>
+        <td></td>
+        <td>
+          <div class="clase algoritmia">
+            <p>ALGORITMIA Y PROGRAMACIÓN</p>
+            <p>8:00 PM - 10:00 PM</p>
+            <a href="https://meet.google.com/yev-babd-fkw" target="_blank">Abrir Meet</a>
+          </div>
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
