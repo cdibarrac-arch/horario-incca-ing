@@ -1,23 +1,24 @@
-```json
 {
-  "id": "/",
-  "name": "Horario Ingeniería Industrial",
-  "short_name": "INCCA",
-  "description": "Horario universitario Ingeniería Industrial INCCA",
+  "name": "Horario INCCA",
+  "short_name": "Horario INCCA",
+  "description": "Horario de Ingeniería Industrial - Universidad INCCA",
   "start_url": "./",
-  "scope": "./",
   "display": "standalone",
-  "orientation": "portrait",
-  "background_color": "#0f172a",
+  "background_color": "#0b1220",
   "theme_color": "#0f172a",
-  "lang": "es",
+  "orientation": "landscape",
   "icons": [
     {
-      "src": "https://cdn-icons-png.flaticon.com/512/1995/1995470.png",
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
     }
   ]
 }
-```
